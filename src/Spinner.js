@@ -1,18 +1,16 @@
 import React from 'react';
-import './SeasonDisplay.css'
+import './SeasonDisplay.css';
 
 const Spinner = (props) => {
-    return (
-        <div className="ui active dimmer border">
-            <div className="ui big text loader">
-                {props.message}
-            </div>
-        </div>
-    );
+  return (
+    <div className='ui active dimmer border'>
+      <div className='ui big text loader'>{props.message}</div>
+    </div>
+  );
 };
 
 Spinner.defaultProps = {
-    message: 'Loading...'
+  message: 'Loading...',
 };
 
 export default Spinner;
